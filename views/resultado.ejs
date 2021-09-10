@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('parciales/head'); %>
+</head>
+<body>
+    <header>
+        <%- include('parciales/header'); %>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+              <h1>Resultado total:  <%= resultado %></h1>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Operación: En id <%= id %>: <%= accion %> el número <%= num %></h5> 
+              <br>
+              <p class="card-text"><b>Historico: </b><%= historial %></p> 
+              <a href="/?id=<%=id %>" class="btn btn-primary">Hacer otra operación</a>
+            </div>
+          </div>
+    </div>
+    
+</body>
+</html>
